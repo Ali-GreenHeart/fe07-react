@@ -10,4 +10,3 @@ function Button({ bgColor, text, clickleyende }) {
     )
 }
 export default Button;
-

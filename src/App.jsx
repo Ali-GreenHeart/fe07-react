@@ -1,18 +1,10 @@
-import Button from "./components/Button";
-import { PaintQuadrat } from "./components/PaintQuadrat";
+import Counter from "./components/Counter";
 
 function App() {
   return (
-    <div>
-      {/*props-> react componentlerinin attribute-lardiri */}
-      <PaintQuadrat bgColor='red' />
-      <PaintQuadrat bgColor='green' />
-      <PaintQuadrat bgColor='blue' />
-      {/* {PaintQuadrat({ bgColor: 'green' })} */}
-      <Button clickleyende={() => {
-        console.log('clicked on me!')
-      }} bgColor="green" text="click me" />
-    </div>
+    <>
+      <Counter />
+    </>
   );
 }
 
