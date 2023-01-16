@@ -9,3 +9,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
+// render -> componentin  kodlarini yeniden run edib, browser-de gostermek.
+// DOM  (real dom) ->  
+// virtual DOM  -> 

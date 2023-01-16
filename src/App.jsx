@@ -1,7 +1,14 @@
+import { PaintQuadrat, ali } from "./PaintQuadrat"
+
 function App() {
   return (
     <div>
-      salam create-react-app
+      <h1>{ali}</h1>
+      {/*props-> react componentlerinin attribute-lardiri */}
+      <PaintQuadrat bgColor='red' />
+      <PaintQuadrat bgColor='green' />
+      <PaintQuadrat bgColor='blue' />
+      {/* {PaintQuadrat({ bgColor: 'green' })} */}
     </div>
   );
 }
