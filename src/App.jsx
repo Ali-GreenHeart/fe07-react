@@ -1,10 +1,9 @@
-import { useState } from "react";
-import Login from "./components/Login";
+import Yummie from "components/Yummie";
 
 function App() {
   return (
     <>
-      <Login />
+      <Yummie />
     </>
   );
 }
