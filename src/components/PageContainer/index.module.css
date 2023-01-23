@@ -1,0 +1,13 @@
+.header {
+    background-color: red;
+    text-align: center;
+}
+
+.header a {
+    color: black;
+    margin: 0 10px;
+}
+
+.activeLink {
+    text-decoration-color: gold;
+}

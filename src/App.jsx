@@ -1,11 +1,5 @@
-import Yummie from "components/Yummie";
+import WebsiteRouting from "routes";
 
-function App() {
-  return (
-    <>
-      <Yummie />
-    </>
-  );
-}
+const App = () => <WebsiteRouting />
 
 export default App;
