@@ -5,6 +5,7 @@ import Home from "pages/Home";
 import About from "pages/About";
 import Services from "pages/Services";
 import NotFound from "pages/NotFound";
+import StarWarsPeople from "pages/StarWarsPeople";
 import StarWars from "pages/StarWars";
 
 const WebsiteRouting = () => {
@@ -15,7 +16,8 @@ const WebsiteRouting = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/starwars/:peopleId" element={<StarWars />} />
+            <Route path="/starwars/:peopleId" element={<StarWarsPeople />} />
+            <Route path="/starwars" element={<StarWars />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
