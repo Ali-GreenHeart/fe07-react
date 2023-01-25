@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import styles from "./index.module.css"
 import { fetchMeal } from 'api/meal'
+import PageContainer from "components/PageContainer"
 
 
 const Yummie = ({ }) => {
@@ -11,7 +12,7 @@ const Yummie = ({ }) => {
     }, [])
 
     return (
-        <>
+        <PageContainer>
             <h1 className={styles.heading}>Welcome to canteen!</h1>
             {
                 Object.keys(meal).length > 0 && <>
@@ -22,7 +23,7 @@ const Yummie = ({ }) => {
                     <img className={styles.img} src={meal.strMealThumb} alt={`${meal.strMeal}`} />
                 </>
             }
-        </>
+        </PageContainer>
     )
 }
 export default Yummie

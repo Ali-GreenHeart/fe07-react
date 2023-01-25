@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 button:hover {
   background-color: darkred !important;
   cursor: pointer;

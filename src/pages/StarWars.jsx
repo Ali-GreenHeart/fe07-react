@@ -9,9 +9,11 @@ const StarWars = ({ }) => {
     const { peopleId } = useParams()
 
     useEffect(() => {
-        axios.get(`https://www.swapi.tech/api/people/${peopleId}`).then(({ data }) => {
+        async function getData() {
+            const { data } = await axios.get(`https://www.swapi.tech/api/people/${peopleId}`)
             setDescription(data.result.description)
-        })
+        }
+        getData()
     }, [])
 
     return (
