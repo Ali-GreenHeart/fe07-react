@@ -5,14 +5,17 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom"
 import DataContextComponent from 'context/DataContext';
 import ModeContextComponent from 'context/ModeContext';
+import AlertContextComponent from 'context/AlertContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <DataContextComponent>
     <ModeContextComponent>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <AlertContextComponent>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AlertContextComponent>
     </ModeContextComponent>
   </DataContextComponent>
 );

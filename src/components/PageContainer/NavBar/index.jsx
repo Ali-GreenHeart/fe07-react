@@ -1,3 +1,4 @@
+import { AlertContext } from 'context/AlertContext'
 import { ModeContext } from 'context/ModeContext'
 import { useContext } from 'react'
 import { NavLink as Nav } from 'react-router-dom'
@@ -11,7 +12,7 @@ const NavLink = ({ to, text }) => {
 const NavBar = ({ }) => {
 
     const [dark, setDark] = useContext(ModeContext)
-
+    const showAlert = useContext(AlertContext)
     return (
         <nav>
             <NavLink to="/" text="Home" />
@@ -25,6 +26,12 @@ const NavBar = ({ }) => {
                     setDark((pre) => !pre)  // state-in evvelki deyeri
                 }}
             >{dark ? '☀' : '🌙'}</button>
+            <button onClick={() => {
+                showAlert({
+                    message: 'salam abi xos gelmisen',
+                    type: 'error'
+                })
+            }}>click to show alert</button>
         </nav>
     )
 }
