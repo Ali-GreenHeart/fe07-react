@@ -1,4 +1,4 @@
-import { DataContext } from 'context/DataContext'
+import { ModeContext } from 'context/ModeContext'
 import { useContext } from 'react'
 import { NavLink as Nav } from 'react-router-dom'
 import styles from './index.module.css'
@@ -10,8 +10,7 @@ const NavLink = ({ to, text }) => {
 }
 const NavBar = ({ }) => {
 
-    const valu = useContext(DataContext)
-    console.log(valu)
+    const [dark, setDark] = useContext(ModeContext)
 
     return (
         <nav>
@@ -21,6 +20,11 @@ const NavBar = ({ }) => {
             <NavLink to="/yummie" text="Yummie" />
             <NavLink to="/login" text="Login" />
             <NavLink to="/starwars" text="StarWars" />
+            <button
+                onClick={() => {
+                    setDark((pre) => !pre)  // state-in evvelki deyeri
+                }}
+            >{dark ? '☀' : '🌙'}</button>
         </nav>
     )
 }

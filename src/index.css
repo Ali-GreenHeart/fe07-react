@@ -6,3 +6,9 @@ button:hover {
   background-color: darkred !important;
   cursor: pointer;
 }
+
+.darkmode,
+.darkmode * {
+  background-color: black !important;
+  color: white !important;
+}

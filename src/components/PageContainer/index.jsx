@@ -7,7 +7,7 @@ const PageContainer = ({ children, className, style }) => {
             <header className={styles.header}>
                 <NavBar />
             </header>
-            <main className={className} style={style}>{children}</main>
+            <main className={className} style={{ ...style, minHeight: '100vh' }}>{children}</main>
             <footer style={{
                 backgroundColor: 'green'
             }}>
