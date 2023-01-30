@@ -7,6 +7,7 @@ import Services from "pages/Services";
 import NotFound from "pages/NotFound";
 import StarWarsPeople from "pages/StarWarsPeople";
 import StarWars from "pages/StarWars";
+import StarWarsWithReducer from "pages/StarWarsWithReducer";
 
 const WebsiteRouting = () => {
     return (
@@ -17,7 +18,7 @@ const WebsiteRouting = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/starwars/:peopleId" element={<StarWarsPeople />} />
-            <Route path="/starwars" element={<StarWars />} />
+            <Route path="/starwars-with-reducer" element={<StarWarsWithReducer />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
