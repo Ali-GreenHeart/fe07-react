@@ -6,16 +6,23 @@ import { BrowserRouter } from "react-router-dom"
 import DataContextComponent from 'context/DataContext';
 import ModeContextComponent from 'context/ModeContext';
 import AlertContextComponent from 'context/AlertContext';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import RootReducer from 'reducers/RootReducer';
+
+const store = createStore(RootReducer)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <DataContextComponent>
-    <ModeContextComponent>
-      <AlertContextComponent>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </AlertContextComponent>
-    </ModeContextComponent>
+    <Provider store={store}>
+      <ModeContextComponent>
+        <AlertContextComponent>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </AlertContextComponent>
+      </ModeContextComponent>
+    </Provider>
   </DataContextComponent>
 );

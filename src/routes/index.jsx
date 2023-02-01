@@ -11,6 +11,7 @@ import StarWarsWithReducer from "pages/StarWarsWithReducer";
 import CatBreeds from "pages/CatBreeds";
 import CatFacts from "pages/CatFacts";
 import Posts from "pages/Posts";
+import PostsRedux from "pages/PostsRedux";
 
 const WebsiteRouting = () => {
     return (
@@ -25,6 +26,7 @@ const WebsiteRouting = () => {
             <Route path="/cat-breeds" element={<CatBreeds />} />
             <Route path="/cat-facts" element={<CatFacts />} />
             <Route path="/posts" element={<Posts />} />
+            <Route path="/posts-redux" element={<PostsRedux />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
