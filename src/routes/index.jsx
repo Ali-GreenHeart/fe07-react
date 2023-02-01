@@ -10,6 +10,7 @@ import StarWars from "pages/StarWars";
 import StarWarsWithReducer from "pages/StarWarsWithReducer";
 import CatBreeds from "pages/CatBreeds";
 import CatFacts from "pages/CatFacts";
+import Posts from "pages/Posts";
 
 const WebsiteRouting = () => {
     return (
@@ -23,6 +24,7 @@ const WebsiteRouting = () => {
             <Route path="/starwars-with-reducer" element={<StarWarsWithReducer />} />
             <Route path="/cat-breeds" element={<CatBreeds />} />
             <Route path="/cat-facts" element={<CatFacts />} />
+            <Route path="/posts" element={<Posts />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
