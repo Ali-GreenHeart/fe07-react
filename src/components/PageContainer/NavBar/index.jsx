@@ -23,6 +23,7 @@ const NavBar = ({ }) => {
             <NavLink to="/starwars" text="StarWars" />
             <NavLink to="/cat-facts" text="CatFacts" />
             <NavLink to="/posts" text="Posts" />
+            <NavLink to="/mui" text="Mui" />
             <button
                 onClick={() => {
                     setDark((pre) => !pre)  // state-in evvelki deyeri

@@ -9,6 +9,7 @@ import AlertContextComponent from 'context/AlertContext';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import RootReducer from 'reducers/RootReducer';
+import { CssBaseline } from '@mui/material';
 
 const store = createStore(RootReducer)
 
@@ -19,6 +20,7 @@ root.render(
       <ModeContextComponent>
         <AlertContextComponent>
           <BrowserRouter>
+            <CssBaseline />
             <App />
           </BrowserRouter>
         </AlertContextComponent>

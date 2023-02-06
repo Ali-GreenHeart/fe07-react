@@ -12,6 +12,7 @@ import CatBreeds from "pages/CatBreeds";
 import CatFacts from "pages/CatFacts";
 import Posts from "pages/Posts";
 import PostsRedux from "pages/PostsRedux";
+import Mui from "pages/Mui";
 
 const WebsiteRouting = () => {
     return (
@@ -27,6 +28,7 @@ const WebsiteRouting = () => {
             <Route path="/cat-facts" element={<CatFacts />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="/posts-redux" element={<PostsRedux />} />
+            <Route path="/mui" element={<Mui />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
